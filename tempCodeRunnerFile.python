@@ -1,0 +1,21 @@
+import numpy as np
+
+A_2 = np.array([
+        [-1, 3],
+        [3, -9]
+    ], dtype=np.dtype(int))
+
+b_2 = np.array([7, 1], dtype=np.dtype(int))
+
+d_2 = np.linalg.det(A_2)
+
+print(f"Determinant of matrix A_2: {d_2}")
+
+
+
+x_2 = np.linalg.solve(A_2, b_2)
+
+# try:
+#     x_2 = np.linalg.solve(A_2, b_2)
+# except np.linalg.LinAlgError as err:
+#     print(err)
